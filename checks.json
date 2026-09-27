@@ -5,8 +5,7 @@
     { "id": "devices", "name": "Device cloud", "type": "http", "url": "https://tb.argynix.com/login" },
     { "id": "site", "name": "argynix.com", "type": "http", "url": "https://www.argynix.com/" },
     { "id": "ops", "name": "Backups and server health", "type": "http", "url": "https://api.argynix.com/api/health/ops",
-      "internal": true, "failuresBeforeDown": 1, "disabled": true,
-      "note": "enable once the backend with /api/health/ops is deployed and ops/install.sh has run" },
+      "internal": true, "failuresBeforeDown": 1 },
     { "id": "tls", "name": "Certificates", "type": "tls", "internal": true, "minDays": 14,
       "hosts": ["iot.argynix.com", "api.argynix.com", "tb.argynix.com", "www.argynix.com"] }
   ]
