@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARGYNIX Status</title>
+<meta name="description" content="Live status of ARGYNIX Connect, the device cloud and argynix.com.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --ground: #F4F6FB; --surface: #FFFFFF; --ink: #111A33; --muted: #56607C; --line: #DCE2EE;
+    --accent: #3552E6; --up: #16946B; --up-soft: #E3F5EE; --warn: #B7791F; --down: #C23A51; --down-soft: #FBE9EC; --none: #D5DBE7;
+    --display: "Barlow Semi Condensed", "Arial Narrow", system-ui, sans-serif;
+    --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --ground: #0B1020; --surface: #121A30; --ink: #E6EAF5; --muted: #9AA3BD; --line: #25304D;
+      --accent: #7B90FF; --up: #3FCF97; --up-soft: #10302A; --warn: #F2B24B; --down: #FF7A8C; --down-soft: #3A1622; --none: #2A3452;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font: 400 15px/1.55 var(--body); }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 36px 20px 64px; display: grid; gap: 28px; }
+  header { display: flex; align-items: center; gap: 12px; }
+  .mark { width: 30px; height: 30px; }
+  h1, h2 { font-family: var(--display); margin: 0; letter-spacing: .01em; }
+  h1 { font-size: 26px; font-weight: 700; }
+  h2 { font-size: 20px; font-weight: 600; }
+  .overall { border-radius: 14px; padding: 20px 22px; display: flex; gap: 14px; align-items: center; font-size: 18px; font-weight: 600; }
+  .overall.up { background: var(--up-soft); color: var(--up); }
+  .overall.down { background: var(--down-soft); color: var(--down); }
+  .overall .sub { display: block; font-size: 13.5px; font-weight: 400; color: var(--muted); margin-top: 2px; }
+  .pulse { width: 12px; height: 12px; border-radius: 50%; background: currentColor; flex: none; }
+  .services { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+  .svc { padding: 18px 22px; display: grid; gap: 10px; }
+  .svc + .svc { border-top: 1px solid var(--line); }
+  .svc .row { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .svc .name { font-weight: 600; }
+  .svc .state { margin-left: auto; font-size: 13.5px; font-weight: 600; }
+  .svc .state.up { color: var(--up); } .svc .state.down { color: var(--down); }
+  .svc .meta { font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-variant-numeric: tabular-nums; }
+  .bars { display: grid; grid-template-columns: repeat(90, minmax(0, 1fr)); gap: 2px; height: 30px; }
+  .bars i { display: block; border-radius: 2px; background: var(--none); }
+  .bars i.up { background: var(--up); } .bars i.warn { background: var(--warn); } .bars i.down { background: var(--down); }
+  .incidents { display: grid; gap: 10px; }
+  .inc { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; font-size: 14px; }
+  .inc b { font-weight: 600; }
+  .inc .when { color: var(--muted); font-size: 13px; }
+  .empty { color: var(--muted); font-size: 14px; }
+  footer { color: var(--muted); font-size: 13px; }
+  footer a { color: var(--accent); }
+  @media (max-width: 520px) { .bars { grid-template-columns: repeat(45, minmax(0, 1fr)); } .bars i:nth-child(-n+45) { display: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" d="M16 3 27.3 9.5v13L16 29 4.7 22.5v-13Z"/><circle cx="16" cy="16" r="3.4" fill="currentColor"/></svg>
+    <h1>ARGYNIX status</h1>
+  </header>
+  <div id="overall" class="overall up" role="status"><span class="pulse"></span><div>Checking…</div></div>
+  <section>
+    <div class="services" id="services"></div>
+  </section>
+  <section class="incidents" aria-labelledby="inc-h">
+    <h2 id="inc-h">Recent incidents</h2>
+    <div id="incidents"></div>
+  </section>
+  <footer>
+    Checked every five minutes from outside ARGYNIX’s own servers. Bars show each of the last 90 days.
+    Updated <span id="updated">—</span>.
+  </footer>
+</div>
+<script>
+(async function () {
+  const get = (f) => fetch(f + '?t=' + Date.now()).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  const [cur, up, inc] = await Promise.all([get('data/current.json'), get('data/uptime.json'), get('data/incidents.json')]);
+  const fmtDate = (iso) => new Date(iso).toLocaleString(undefined, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  if (!cur) { document.getElementById('overall').lastChild.textContent = 'Status data is not available yet.'; return; }
+  const svcs = Object.entries(cur.checks).filter(([, c]) => !c.internal);
+  const downs = svcs.filter(([, c]) => c.state === 'down');
+  const ov = document.getElementById('overall');
+  ov.className = 'overall ' + (downs.length ? 'down' : 'up');
+  ov.lastChild.innerHTML = downs.length
+    ? `${downs.length === 1 ? esc(downs[0][1].name) + ' is' : 'Some services are'} having problems<span class="sub">We know and are working on it.</span>`
+    : 'All systems operational<span class="sub">Connect, the device cloud and argynix.com are up.</span>';
+
+  const days = [...Array(90)].map((_, i) => new Date(Date.now() - (89 - i) * 86400000).toISOString().slice(0, 10));
+  document.getElementById('services').innerHTML = svcs.map(([id, c]) => {
+    const u = (up && up[id]) || {};
+    let ok = 0, total = 0;
+    const bars = days.map((d) => {
+      const v = u[d];
+      if (!v) return `<i title="${d}: no data"></i>`;
+      ok += v[0]; total += v[1];
+      const pct = (100 * v[0]) / v[1];
+      const cls = pct >= 99.9 ? 'up' : pct >= 99 ? 'warn' : 'down';
+      return `<i class="${cls}" title="${d}: ${pct.toFixed(2)}% up"></i>`;
+    }).join('');
+    const pct = total ? ((100 * ok) / total).toFixed(2) + '% up over 90 days' : 'no history yet';
+    return `<div class="svc"><div class="row"><span class="name">${esc(c.name)}</span>
+      <span class="state ${c.state}">${c.state === 'up' ? 'Operational' : 'Down since ' + fmtDate(c.since)}</span></div>
+      <div class="bars" aria-label="Daily uptime, last 90 days">${bars}</div>
+      <div class="meta"><span>${pct}</span><span>${c.state === 'up' ? c.ms + ' ms just now' : esc(c.detail || '')}</span></div></div>`;
+  }).join('');
+
+  const pub = new Set(svcs.map(([id]) => id));
+  const list = (inc || []).filter((i) => pub.has(i.check)).slice(0, 10);
+  document.getElementById('incidents').innerHTML = list.length ? list.map((i) => {
+    const mins = i.end ? Math.max(1, Math.round((Date.parse(i.end) - Date.parse(i.start)) / 60000)) : null;
+    return `<div class="inc"><b>${esc(i.name)}</b> ${i.end ? `was down for ${mins} min` : 'is down'}<div class="when">${fmtDate(i.start)}${i.end ? ' – ' + fmtDate(i.end) : ' – ongoing'}</div></div>`;
+  }).join('') : '<p class="empty">No incidents recorded.</p>';
+  document.getElementById('updated').textContent = fmtDate(cur.updated);
+})();
+</script>
+</body>
+</html>

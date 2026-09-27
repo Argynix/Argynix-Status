@@ -1,0 +1,65 @@
+{
+ "checks": {
+  "app": {
+   "name": "Connect web app",
+   "internal": false,
+   "state": "up",
+   "fails": 0,
+   "since": "2026-09-27T10:25:36.654Z",
+   "checked": "2026-09-27T10:25:36.654Z",
+   "ms": 258,
+   "code": 200,
+   "detail": "",
+   "issue": null
+  },
+  "api": {
+   "name": "Connect API",
+   "internal": false,
+   "state": "up",
+   "fails": 0,
+   "since": "2026-09-27T10:25:36.654Z",
+   "checked": "2026-09-27T10:25:36.654Z",
+   "ms": 745,
+   "code": 200,
+   "detail": "",
+   "issue": null
+  },
+  "devices": {
+   "name": "Device cloud",
+   "internal": false,
+   "state": "up",
+   "fails": 0,
+   "since": "2026-09-27T10:25:36.654Z",
+   "checked": "2026-09-27T10:25:36.654Z",
+   "ms": 611,
+   "code": 200,
+   "detail": "",
+   "issue": null
+  },
+  "site": {
+   "name": "argynix.com",
+   "internal": false,
+   "state": "up",
+   "fails": 0,
+   "since": "2026-09-27T10:25:36.654Z",
+   "checked": "2026-09-27T10:25:36.654Z",
+   "ms": 318,
+   "code": 200,
+   "detail": "",
+   "issue": null
+  },
+  "tls": {
+   "name": "Certificates",
+   "internal": true,
+   "state": "up",
+   "fails": 0,
+   "since": "2026-09-27T10:25:36.654Z",
+   "checked": "2026-09-27T10:25:36.654Z",
+   "ms": 503,
+   "code": 0,
+   "detail": "soonest expiry in 47 days",
+   "issue": null
+  }
+ },
+ "updated": "2026-09-27T10:25:36.654Z"
+}
