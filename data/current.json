@@ -6,8 +6,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-06T07:59:00.995Z",
-   "ms": 379,
+   "checked": "2026-10-06T14:56:48.990Z",
+   "ms": 580,
    "code": 200,
    "detail": "",
    "issue": null
@@ -18,8 +18,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-06T07:59:00.995Z",
-   "ms": 428,
+   "checked": "2026-10-06T14:56:48.990Z",
+   "ms": 356,
    "code": 200,
    "detail": "",
    "issue": null
@@ -30,8 +30,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-06T07:59:00.995Z",
-   "ms": 438,
+   "checked": "2026-10-06T14:56:48.990Z",
+   "ms": 446,
    "code": 200,
    "detail": "",
    "issue": null
@@ -42,8 +42,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-06T07:59:00.995Z",
-   "ms": 300,
+   "checked": "2026-10-06T14:56:48.990Z",
+   "ms": 259,
    "code": 200,
    "detail": "",
    "issue": null
@@ -54,24 +54,24 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-06T07:59:00.995Z",
-   "ms": 277,
+   "checked": "2026-10-06T14:56:48.990Z",
+   "ms": 319,
    "code": 0,
-   "detail": "soonest expiry in 39 days",
+   "detail": "soonest expiry in 38 days",
    "issue": null
   },
   "ops": {
    "name": "Backups and server health",
    "internal": true,
-   "state": "up",
-   "fails": 0,
-   "since": "2026-09-27T15:14:20.062Z",
-   "checked": "2026-10-06T07:59:00.995Z",
-   "ms": 119,
-   "code": 200,
-   "detail": "",
-   "issue": null
+   "state": "down",
+   "fails": 1,
+   "since": "2026-10-06T14:56:48.990Z",
+   "checked": "2026-10-06T14:56:48.990Z",
+   "ms": 105,
+   "code": 503,
+   "detail": "HTTP 503",
+   "issue": 1
   }
  },
- "updated": "2026-10-06T07:59:00.995Z"
+ "updated": "2026-10-06T14:56:48.990Z"
 }
