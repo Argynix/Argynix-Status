@@ -3,7 +3,7 @@
   "check": "ops",
   "name": "Backups and server health",
   "start": "2026-10-06T14:56:48.990Z",
-  "end": null,
+  "end": "2026-10-07T09:18:30.067Z",
   "detail": "HTTP 503",
   "issue": 1
  }
