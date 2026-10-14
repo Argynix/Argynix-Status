@@ -6,8 +6,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-14T12:22:45.670Z",
-   "ms": 535,
+   "checked": "2026-10-14T17:23:19.769Z",
+   "ms": 564,
    "code": 200,
    "detail": "",
    "issue": null
@@ -18,8 +18,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-14T12:22:45.670Z",
-   "ms": 303,
+   "checked": "2026-10-14T17:23:19.769Z",
+   "ms": 463,
    "code": 200,
    "detail": "",
    "issue": null
@@ -30,8 +30,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-14T12:22:45.670Z",
-   "ms": 380,
+   "checked": "2026-10-14T17:23:19.769Z",
+   "ms": 476,
    "code": 200,
    "detail": "",
    "issue": null
@@ -42,8 +42,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-14T12:22:45.670Z",
-   "ms": 268,
+   "checked": "2026-10-14T17:23:19.769Z",
+   "ms": 669,
    "code": 200,
    "detail": "",
    "issue": null
@@ -54,8 +54,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-14T12:22:45.670Z",
-   "ms": 277,
+   "checked": "2026-10-14T17:23:19.769Z",
+   "ms": 353,
    "code": 0,
    "detail": "soonest expiry in 30 days",
    "issue": null
@@ -66,12 +66,12 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-10T18:53:53.380Z",
-   "checked": "2026-10-14T12:22:45.670Z",
-   "ms": 92,
+   "checked": "2026-10-14T17:23:19.769Z",
+   "ms": 149,
    "code": 200,
    "detail": "",
    "issue": null
   }
  },
- "updated": "2026-10-14T12:22:45.670Z"
+ "updated": "2026-10-14T17:23:19.769Z"
 }
