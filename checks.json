@@ -3,10 +3,12 @@
     { "id": "app", "name": "Connect web app", "type": "http", "url": "https://iot.argynix.com/login" },
     { "id": "api", "name": "Connect API", "type": "http", "url": "https://api.argynix.com/api/health", "json": { "status": "ok" } },
     { "id": "devices", "name": "Device cloud", "type": "http", "url": "https://tb.argynix.com/login" },
+    { "id": "mqtt", "name": "Device connections", "type": "tlsport", "host": "tb.argynix.com", "port": 28883 },
     { "id": "site", "name": "argynix.com", "type": "http", "url": "https://www.argynix.com/" },
+    { "id": "shop", "name": "Shop", "type": "http", "url": "https://shop.argynix.com/" },
     { "id": "ops", "name": "Backups and server health", "type": "http", "url": "https://api.argynix.com/api/health/ops",
       "internal": true, "failuresBeforeDown": 1 },
     { "id": "tls", "name": "Certificates", "type": "tls", "internal": true, "minDays": 14,
-      "hosts": ["iot.argynix.com", "api.argynix.com", "tb.argynix.com", "www.argynix.com"] }
+      "hosts": ["iot.argynix.com", "api.argynix.com", "tb.argynix.com", "tb.argynix.com:28883", "www.argynix.com", "shop.argynix.com"] }
   ]
 }

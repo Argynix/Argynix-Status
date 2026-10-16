@@ -40,9 +40,11 @@ async function probeHttp(c) {
   }
 }
 
-function certDaysLeft(host) {
+// "tb.argynix.com" (port 443) or "tb.argynix.com:28883".
+function certDaysLeft(spec) {
+  const [host, port] = spec.split(':');
   return new Promise((resolve) => {
-    const s = tls.connect({ host, port: 443, servername: host, timeout: TIMEOUT_MS }, () => {
+    const s = tls.connect({ host, port: Number(port) || 443, servername: host, timeout: TIMEOUT_MS }, () => {
       const cert = s.getPeerCertificate();
       s.end();
       resolve(cert?.valid_to ? Math.floor((Date.parse(cert.valid_to) - Date.now()) / 86_400_000) : null);
@@ -62,6 +64,23 @@ async function probeTls(c) {
       detail: bad.map(([h, d]) => (d === null ? `${h}: no certificate` : `${h}: expires in ${d} days`)).join('; ') };
   }
   return { ok: true, ms: Date.now() - t0, code: 0, detail: `soonest expiry in ${min} days` };
+}
+
+// A TLS service that is not a web page — the MQTT broker devices connect to. Up when the
+// handshake completes with a certificate valid for the host; a web page answering on 443
+// says nothing about whether devices can connect.
+function probeTlsPort(c) {
+  const t0 = Date.now();
+  return new Promise((resolve) => {
+    const s = tls.connect({ host: c.host, port: c.port, servername: c.host, timeout: TIMEOUT_MS }, () => {
+      const cert = s.getPeerCertificate();
+      s.end();
+      const days = cert?.valid_to ? Math.floor((Date.parse(cert.valid_to) - Date.now()) / 86_400_000) : null;
+      resolve({ ok: true, ms: Date.now() - t0, code: 0, detail: days === null ? 'connected' : `connected; certificate ${days} days` });
+    });
+    s.on('error', (e) => resolve({ ok: false, ms: Date.now() - t0, code: 0, detail: String(e.code || e.message) }));
+    s.on('timeout', () => { s.destroy(); resolve({ ok: false, ms: Date.now() - t0, code: 0, detail: 'no answer in 15 s' }); });
+  });
 }
 
 async function gh(path, method = 'GET', body) {
@@ -91,7 +110,7 @@ const now = new Date().toISOString();
 const day = now.slice(0, 10);
 
 for (const c of cfg.checks.filter((x) => !x.disabled)) {
-  const r = c.type === 'tls' ? await probeTls(c) : await probeHttp(c);
+  const r = c.type === 'tls' ? await probeTls(c) : c.type === 'tlsport' ? await probeTlsPort(c) : await probeHttp(c);
   const prev = current.checks[c.id] || { state: 'up', fails: 0, since: now };
   const fails = r.ok ? 0 : (prev.fails || 0) + 1;
   const state = r.ok ? 'up' : fails >= (c.failuresBeforeDown ?? 2) ? 'down' : prev.state;
