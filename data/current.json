@@ -6,8 +6,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-17T01:38:41.648Z",
-   "ms": 399,
+   "checked": "2026-10-17T06:10:49.536Z",
+   "ms": 578,
    "code": 200,
    "detail": "",
    "issue": null
@@ -15,26 +15,26 @@
   "api": {
    "name": "Connect API",
    "internal": false,
-   "state": "down",
-   "fails": 3,
-   "since": "2026-10-16T23:50:22.100Z",
-   "checked": "2026-10-17T01:38:41.648Z",
-   "ms": 10128,
-   "code": 0,
-   "detail": "UND_ERR_CONNECT_TIMEOUT",
-   "issue": 4
+   "state": "up",
+   "fails": 0,
+   "since": "2026-10-17T06:10:49.536Z",
+   "checked": "2026-10-17T06:10:49.536Z",
+   "ms": 479,
+   "code": 200,
+   "detail": "",
+   "issue": null
   },
   "devices": {
    "name": "Device cloud",
    "internal": false,
-   "state": "down",
-   "fails": 3,
-   "since": "2026-10-16T23:50:22.100Z",
-   "checked": "2026-10-17T01:38:41.648Z",
-   "ms": 10493,
-   "code": 0,
-   "detail": "UND_ERR_CONNECT_TIMEOUT",
-   "issue": 5
+   "state": "up",
+   "fails": 0,
+   "since": "2026-10-17T06:10:49.536Z",
+   "checked": "2026-10-17T06:10:49.536Z",
+   "ms": 504,
+   "code": 200,
+   "detail": "",
+   "issue": null
   },
   "site": {
    "name": "argynix.com",
@@ -42,8 +42,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-17T01:38:41.648Z",
-   "ms": 294,
+   "checked": "2026-10-17T06:10:49.536Z",
+   "ms": 222,
    "code": 200,
    "detail": "",
    "issue": null
@@ -51,38 +51,38 @@
   "tls": {
    "name": "Certificates",
    "internal": true,
-   "state": "down",
-   "fails": 3,
-   "since": "2026-10-16T23:50:22.100Z",
-   "checked": "2026-10-17T01:38:41.648Z",
-   "ms": 15051,
+   "state": "up",
+   "fails": 0,
+   "since": "2026-10-17T06:10:49.536Z",
+   "checked": "2026-10-17T06:10:49.536Z",
+   "ms": 322,
    "code": 0,
-   "detail": "api.argynix.com: no certificate; tb.argynix.com: no certificate; tb.argynix.com:28883: no certificate",
-   "issue": 7
+   "detail": "soonest expiry in 38 days",
+   "issue": null
   },
   "ops": {
    "name": "Backups and server health",
    "internal": true,
-   "state": "down",
-   "fails": 3,
-   "since": "2026-10-16T21:33:46.779Z",
-   "checked": "2026-10-17T01:38:41.648Z",
-   "ms": 10490,
-   "code": 0,
-   "detail": "UND_ERR_CONNECT_TIMEOUT",
-   "issue": 3
+   "state": "up",
+   "fails": 0,
+   "since": "2026-10-17T06:10:49.536Z",
+   "checked": "2026-10-17T06:10:49.536Z",
+   "ms": 441,
+   "code": 200,
+   "detail": "",
+   "issue": null
   },
   "mqtt": {
    "name": "Device connections",
    "internal": false,
-   "state": "down",
-   "fails": 3,
-   "since": "2026-10-16T23:50:22.100Z",
-   "checked": "2026-10-17T01:38:41.648Z",
-   "ms": 15040,
+   "state": "up",
+   "fails": 0,
+   "since": "2026-10-17T06:10:49.536Z",
+   "checked": "2026-10-17T06:10:49.536Z",
+   "ms": 349,
    "code": 0,
-   "detail": "no answer in 15 s",
-   "issue": 6
+   "detail": "connected; certificate 46 days",
+   "issue": null
   },
   "shop": {
    "name": "Shop",
@@ -90,12 +90,12 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-16T05:49:27.541Z",
-   "checked": "2026-10-17T01:38:41.648Z",
-   "ms": 310,
+   "checked": "2026-10-17T06:10:49.536Z",
+   "ms": 484,
    "code": 200,
    "detail": "",
    "issue": null
   }
  },
- "updated": "2026-10-17T01:38:41.648Z"
+ "updated": "2026-10-17T06:10:49.536Z"
 }

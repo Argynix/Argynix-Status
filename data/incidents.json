@@ -3,7 +3,7 @@
   "check": "tls",
   "name": "Certificates",
   "start": "2026-10-16T23:50:22.100Z",
-  "end": null,
+  "end": "2026-10-17T06:10:49.536Z",
   "detail": "api.argynix.com: no certificate; tb.argynix.com: no certificate; tb.argynix.com:28883: no certificate",
   "issue": 7
  },
@@ -11,7 +11,7 @@
   "check": "mqtt",
   "name": "Device connections",
   "start": "2026-10-16T23:50:22.100Z",
-  "end": null,
+  "end": "2026-10-17T06:10:49.536Z",
   "detail": "no answer in 15 s",
   "issue": 6
  },
@@ -19,7 +19,7 @@
   "check": "devices",
   "name": "Device cloud",
   "start": "2026-10-16T23:50:22.100Z",
-  "end": null,
+  "end": "2026-10-17T06:10:49.536Z",
   "detail": "UND_ERR_CONNECT_TIMEOUT",
   "issue": 5
  },
@@ -27,7 +27,7 @@
   "check": "api",
   "name": "Connect API",
   "start": "2026-10-16T23:50:22.100Z",
-  "end": null,
+  "end": "2026-10-17T06:10:49.536Z",
   "detail": "UND_ERR_CONNECT_TIMEOUT",
   "issue": 4
  },
@@ -35,7 +35,7 @@
   "check": "ops",
   "name": "Backups and server health",
   "start": "2026-10-16T21:33:46.779Z",
-  "end": null,
+  "end": "2026-10-17T06:10:49.536Z",
   "detail": "UND_ERR_CONNECT_TIMEOUT",
   "issue": 3
  },
