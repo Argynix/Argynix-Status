@@ -6,8 +6,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-19T23:08:18.542Z",
-   "ms": 600,
+   "checked": "2026-10-20T01:47:12.481Z",
+   "ms": 387,
    "code": 200,
    "detail": "",
    "issue": null
@@ -18,8 +18,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-17T06:10:49.536Z",
-   "checked": "2026-10-19T23:08:18.542Z",
-   "ms": 317,
+   "checked": "2026-10-20T01:47:12.481Z",
+   "ms": 311,
    "code": 200,
    "detail": "",
    "issue": null
@@ -30,8 +30,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-17T06:10:49.536Z",
-   "checked": "2026-10-19T23:08:18.542Z",
-   "ms": 317,
+   "checked": "2026-10-20T01:47:12.481Z",
+   "ms": 316,
    "code": 200,
    "detail": "",
    "issue": null
@@ -42,8 +42,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-19T23:08:18.542Z",
-   "ms": 242,
+   "checked": "2026-10-20T01:47:12.481Z",
+   "ms": 177,
    "code": 200,
    "detail": "",
    "issue": null
@@ -54,8 +54,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-17T06:10:49.536Z",
-   "checked": "2026-10-19T23:08:18.542Z",
-   "ms": 255,
+   "checked": "2026-10-20T01:47:12.481Z",
+   "ms": 207,
    "code": 0,
    "detail": "soonest expiry in 35 days",
    "issue": null
@@ -66,7 +66,7 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-17T06:10:49.536Z",
-   "checked": "2026-10-19T23:08:18.542Z",
+   "checked": "2026-10-20T01:47:12.481Z",
    "ms": 90,
    "code": 200,
    "detail": "",
@@ -78,8 +78,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-17T06:10:49.536Z",
-   "checked": "2026-10-19T23:08:18.542Z",
-   "ms": 197,
+   "checked": "2026-10-20T01:47:12.481Z",
+   "ms": 230,
    "code": 0,
    "detail": "connected; certificate 43 days",
    "issue": null
@@ -90,12 +90,12 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-16T05:49:27.541Z",
-   "checked": "2026-10-19T23:08:18.542Z",
-   "ms": 256,
+   "checked": "2026-10-20T01:47:12.481Z",
+   "ms": 278,
    "code": 200,
    "detail": "",
    "issue": null
   }
  },
- "updated": "2026-10-19T23:08:18.542Z"
+ "updated": "2026-10-20T01:47:12.481Z"
 }
