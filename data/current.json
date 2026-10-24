@@ -6,8 +6,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-24T11:31:50.804Z",
-   "ms": 339,
+   "checked": "2026-10-24T14:48:45.333Z",
+   "ms": 513,
    "code": 200,
    "detail": "",
    "issue": null
@@ -18,8 +18,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-17T06:10:49.536Z",
-   "checked": "2026-10-24T11:31:50.804Z",
-   "ms": 304,
+   "checked": "2026-10-24T14:48:45.333Z",
+   "ms": 309,
    "code": 200,
    "detail": "",
    "issue": null
@@ -30,8 +30,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-17T06:10:49.536Z",
-   "checked": "2026-10-24T11:31:50.804Z",
-   "ms": 309,
+   "checked": "2026-10-24T14:48:45.333Z",
+   "ms": 318,
    "code": 200,
    "detail": "",
    "issue": null
@@ -42,8 +42,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-24T11:31:50.804Z",
-   "ms": 108,
+   "checked": "2026-10-24T14:48:45.333Z",
+   "ms": 144,
    "code": 200,
    "detail": "",
    "issue": null
@@ -54,8 +54,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-17T06:10:49.536Z",
-   "checked": "2026-10-24T11:31:50.804Z",
-   "ms": 214,
+   "checked": "2026-10-24T14:48:45.333Z",
+   "ms": 258,
    "code": 0,
    "detail": "soonest expiry in 31 days",
    "issue": null
@@ -66,8 +66,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-17T06:10:49.536Z",
-   "checked": "2026-10-24T11:31:50.804Z",
-   "ms": 97,
+   "checked": "2026-10-24T14:48:45.333Z",
+   "ms": 88,
    "code": 200,
    "detail": "",
    "issue": null
@@ -78,10 +78,10 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-17T06:10:49.536Z",
-   "checked": "2026-10-24T11:31:50.804Z",
-   "ms": 235,
+   "checked": "2026-10-24T14:48:45.333Z",
+   "ms": 197,
    "code": 0,
-   "detail": "connected; certificate 39 days",
+   "detail": "connected; certificate 38 days",
    "issue": null
   },
   "shop": {
@@ -90,12 +90,12 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-16T05:49:27.541Z",
-   "checked": "2026-10-24T11:31:50.804Z",
-   "ms": 194,
+   "checked": "2026-10-24T14:48:45.333Z",
+   "ms": 339,
    "code": 200,
    "detail": "",
    "issue": null
   }
  },
- "updated": "2026-10-24T11:31:50.804Z"
+ "updated": "2026-10-24T14:48:45.333Z"
 }
