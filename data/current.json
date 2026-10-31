@@ -6,8 +6,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-31T11:12:53.581Z",
-   "ms": 748,
+   "checked": "2026-10-31T16:06:46.241Z",
+   "ms": 450,
    "code": 200,
    "detail": "",
    "issue": null
@@ -18,8 +18,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-10-31T11:12:53.581Z",
-   "ms": 514,
+   "checked": "2026-10-31T16:06:46.241Z",
+   "ms": 510,
    "code": 200,
    "detail": "",
    "issue": null
@@ -30,8 +30,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-10-31T11:12:53.581Z",
-   "ms": 508,
+   "checked": "2026-10-31T16:06:46.241Z",
+   "ms": 512,
    "code": 200,
    "detail": "",
    "issue": null
@@ -42,8 +42,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-10-31T11:12:53.581Z",
-   "ms": 309,
+   "checked": "2026-10-31T16:06:46.241Z",
+   "ms": 235,
    "code": 200,
    "detail": "",
    "issue": null
@@ -54,8 +54,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-10-31T11:12:53.581Z",
-   "ms": 372,
+   "checked": "2026-10-31T16:06:46.241Z",
+   "ms": 380,
    "code": 0,
    "detail": "soonest expiry in 31 days",
    "issue": null
@@ -63,14 +63,14 @@
   "ops": {
    "name": "Backups and server health",
    "internal": true,
-   "state": "up",
-   "fails": 0,
-   "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-10-31T11:12:53.581Z",
-   "ms": 153,
-   "code": 200,
-   "detail": "",
-   "issue": null
+   "state": "down",
+   "fails": 1,
+   "since": "2026-10-31T16:06:46.241Z",
+   "checked": "2026-10-31T16:06:46.241Z",
+   "ms": 171,
+   "code": 503,
+   "detail": "HTTP 503",
+   "issue": 13
   },
   "mqtt": {
    "name": "Device connections",
@@ -78,10 +78,10 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-10-31T11:12:53.581Z",
+   "checked": "2026-10-31T16:06:46.241Z",
    "ms": 356,
    "code": 0,
-   "detail": "connected; certificate 32 days",
+   "detail": "connected; certificate 31 days",
    "issue": null
   },
   "shop": {
@@ -90,12 +90,12 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-16T05:49:27.541Z",
-   "checked": "2026-10-31T11:12:53.581Z",
-   "ms": 322,
+   "checked": "2026-10-31T16:06:46.241Z",
+   "ms": 303,
    "code": 200,
    "detail": "",
    "issue": null
   }
  },
- "updated": "2026-10-31T11:12:53.581Z"
+ "updated": "2026-10-31T16:06:46.241Z"
 }
