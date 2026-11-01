@@ -6,8 +6,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-11-01T09:07:40.316Z",
-   "ms": 415,
+   "checked": "2026-11-01T15:58:26.542Z",
+   "ms": 465,
    "code": 200,
    "detail": "",
    "issue": null
@@ -18,8 +18,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-11-01T09:07:40.316Z",
-   "ms": 408,
+   "checked": "2026-11-01T15:58:26.542Z",
+   "ms": 502,
    "code": 200,
    "detail": "",
    "issue": null
@@ -30,8 +30,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-11-01T09:07:40.316Z",
-   "ms": 456,
+   "checked": "2026-11-01T15:58:26.542Z",
+   "ms": 505,
    "code": 200,
    "detail": "",
    "issue": null
@@ -42,8 +42,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-11-01T09:07:40.316Z",
-   "ms": 219,
+   "checked": "2026-11-01T15:58:26.542Z",
+   "ms": 466,
    "code": 200,
    "detail": "",
    "issue": null
@@ -54,8 +54,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-11-01T09:07:40.316Z",
-   "ms": 307,
+   "checked": "2026-11-01T15:58:26.542Z",
+   "ms": 323,
    "code": 0,
    "detail": "soonest expiry in 30 days",
    "issue": null
@@ -64,10 +64,10 @@
    "name": "Backups and server health",
    "internal": true,
    "state": "down",
-   "fails": 5,
+   "fails": 6,
    "since": "2026-10-31T16:06:46.241Z",
-   "checked": "2026-11-01T09:07:40.316Z",
-   "ms": 124,
+   "checked": "2026-11-01T15:58:26.542Z",
+   "ms": 160,
    "code": 503,
    "detail": "HTTP 503",
    "issue": 13
@@ -78,10 +78,10 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-11-01T09:07:40.316Z",
-   "ms": 248,
+   "checked": "2026-11-01T15:58:26.542Z",
+   "ms": 308,
    "code": 0,
-   "detail": "connected; certificate 31 days",
+   "detail": "connected; certificate 30 days",
    "issue": null
   },
   "shop": {
@@ -90,12 +90,12 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-16T05:49:27.541Z",
-   "checked": "2026-11-01T09:07:40.316Z",
-   "ms": 317,
+   "checked": "2026-11-01T15:58:26.542Z",
+   "ms": 335,
    "code": 200,
    "detail": "",
    "issue": null
   }
  },
- "updated": "2026-11-01T09:07:40.316Z"
+ "updated": "2026-11-01T15:58:26.542Z"
 }
