@@ -6,8 +6,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-11-03T02:22:55.366Z",
-   "ms": 681,
+   "checked": "2026-11-03T09:46:20.216Z",
+   "ms": 426,
    "code": 200,
    "detail": "",
    "issue": null
@@ -18,8 +18,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-11-03T02:22:55.366Z",
-   "ms": 500,
+   "checked": "2026-11-03T09:46:20.216Z",
+   "ms": 370,
    "code": 200,
    "detail": "",
    "issue": null
@@ -30,8 +30,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-11-03T02:22:55.366Z",
-   "ms": 450,
+   "checked": "2026-11-03T09:46:20.216Z",
+   "ms": 508,
    "code": 200,
    "detail": "",
    "issue": null
@@ -42,8 +42,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-11-03T02:22:55.366Z",
-   "ms": 239,
+   "checked": "2026-11-03T09:46:20.216Z",
+   "ms": 343,
    "code": 200,
    "detail": "",
    "issue": null
@@ -54,23 +54,23 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-11-03T02:22:55.366Z",
-   "ms": 313,
+   "checked": "2026-11-03T09:46:20.216Z",
+   "ms": 414,
    "code": 0,
-   "detail": "soonest expiry in 37 days",
+   "detail": "soonest expiry in 36 days",
    "issue": null
   },
   "ops": {
    "name": "Backups and server health",
    "internal": true,
-   "state": "down",
-   "fails": 12,
-   "since": "2026-10-31T16:06:46.241Z",
-   "checked": "2026-11-03T02:22:55.366Z",
-   "ms": 149,
-   "code": 503,
-   "detail": "HTTP 503",
-   "issue": 13
+   "state": "up",
+   "fails": 0,
+   "since": "2026-11-03T09:46:20.216Z",
+   "checked": "2026-11-03T09:46:20.216Z",
+   "ms": 118,
+   "code": 200,
+   "detail": "",
+   "issue": null
   },
   "mqtt": {
    "name": "Device connections",
@@ -78,8 +78,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-11-03T02:22:55.366Z",
-   "ms": 520,
+   "checked": "2026-11-03T09:46:20.216Z",
+   "ms": 422,
    "code": 0,
    "detail": "connected; certificate 89 days",
    "issue": null
@@ -90,12 +90,12 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-16T05:49:27.541Z",
-   "checked": "2026-11-03T02:22:55.366Z",
-   "ms": 297,
+   "checked": "2026-11-03T09:46:20.216Z",
+   "ms": 341,
    "code": 200,
    "detail": "",
    "issue": null
   }
  },
- "updated": "2026-11-03T02:22:55.366Z"
+ "updated": "2026-11-03T09:46:20.216Z"
 }
