@@ -6,8 +6,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-11-27T04:52:13.830Z",
-   "ms": 496,
+   "checked": "2026-11-27T14:28:09.076Z",
+   "ms": 679,
    "code": 200,
    "detail": "",
    "issue": null
@@ -18,8 +18,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-11-27T04:52:13.830Z",
-   "ms": 504,
+   "checked": "2026-11-27T14:28:09.076Z",
+   "ms": 498,
    "code": 200,
    "detail": "",
    "issue": null
@@ -30,8 +30,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-11-27T04:52:13.830Z",
-   "ms": 526,
+   "checked": "2026-11-27T14:28:09.076Z",
+   "ms": 498,
    "code": 200,
    "detail": "",
    "issue": null
@@ -42,8 +42,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-09-27T10:25:36.654Z",
-   "checked": "2026-11-27T04:52:13.830Z",
-   "ms": 207,
+   "checked": "2026-11-27T14:28:09.076Z",
+   "ms": 245,
    "code": 200,
    "detail": "",
    "issue": null
@@ -54,10 +54,10 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-11-27T04:52:13.830Z",
-   "ms": 367,
+   "checked": "2026-11-27T14:28:09.076Z",
+   "ms": 355,
    "code": 0,
-   "detail": "soonest expiry in 48 days",
+   "detail": "soonest expiry in 47 days",
    "issue": null
   },
   "ops": {
@@ -66,8 +66,8 @@
    "state": "up",
    "fails": 0,
    "since": "2026-11-03T09:46:20.216Z",
-   "checked": "2026-11-27T04:52:13.830Z",
-   "ms": 152,
+   "checked": "2026-11-27T14:28:09.076Z",
+   "ms": 146,
    "code": 200,
    "detail": "",
    "issue": null
@@ -78,10 +78,10 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-27T20:42:40.448Z",
-   "checked": "2026-11-27T04:52:13.830Z",
-   "ms": 312,
+   "checked": "2026-11-27T14:28:09.076Z",
+   "ms": 310,
    "code": 0,
-   "detail": "connected; certificate 65 days",
+   "detail": "connected; certificate 64 days",
    "issue": null
   },
   "shop": {
@@ -90,12 +90,12 @@
    "state": "up",
    "fails": 0,
    "since": "2026-10-16T05:49:27.541Z",
-   "checked": "2026-11-27T04:52:13.830Z",
-   "ms": 469,
+   "checked": "2026-11-27T14:28:09.076Z",
+   "ms": 372,
    "code": 200,
    "detail": "",
    "issue": null
   }
  },
- "updated": "2026-11-27T04:52:13.830Z"
+ "updated": "2026-11-27T14:28:09.076Z"
 }
